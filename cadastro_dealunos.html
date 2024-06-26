@@ -1,0 +1,124 @@
+
+Ótimo! Vou atualizar o código para incluir o link correto do grupo do WhatsApp.
+
+### Código HTML e CSS atualizado com o link do WhatsApp:
+
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Alunos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            text-align: center;
+            color: #e32636; /* Vermelho */
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        label {
+            margin: 10px 0 5px;
+            color: #333;
+            text-align: left;
+            width: 100%;
+        }
+        input[type="text"],
+        input[type="date"],
+        input[type="email"] {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: calc(100% - 22px); /* Adjust width considering padding and border */
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            border: none;
+            background-color: #3333cc; /* Azul */
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #1111aa;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #888;
+        }
+        .logo {
+            width: 150px; /* Adjust size as needed */
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="logo_amo_a4.jpg" alt="Logo Amo Medicina" class="logo">
+        <h1>Cadastro de Alunos</h1>
+        <form id="signupForm">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="whatsapp">WhatsApp:</label>
+            <input type="text" id="whatsapp" name="whatsapp" required>
+
+            <label for="birthdate">Data de Nascimento:</label>
+            <input type="date" id="birthdate" name="birthdate" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <input type="submit" value="Cadastrar">
+        </form>
+        <div class="footer">
+            &copy; 2024 Amo Grupo de Estudo Inteligente
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('signupForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const whatsapp = document.getElementById('whatsapp').value;
+            const birthdate = document.getElementById('birthdate').value;
+            const email = document.getElementById('email').value;
+            
+            // Simulate sending data to a server
+            console.log({ name, whatsapp, birthdate, email });
+
+            // WhatsApp group link
+            const whatsappLink = "https://chat.whatsapp.com/IooQDODbNtjLvLOl9g5EFe";
+
+            // Show an alert with the WhatsApp link
+            alert(`Cadastro realizado com sucesso! Acesse o grupo do WhatsApp: ${whatsappLink}`);
+        });
+    </script>
+</body>
+</html>
+```
+
+Este código agora inclui o link correto para o grupo do WhatsApp. Ao preencher o formulário, os dados serão registrados e uma mensagem de alerta será exibida com o link do grupo do WhatsApp.
+
+Por favor, me avise se precisar de mais alguma modificação!
